@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Ejemplo práctico de maquetación web con HTML5">
+    <meta name="keywords" content="html5, css3, tablas, utp">
+
+    <meta name="author" content="Estudiante - Desarrollo Web">
+    <meta name="robots" content="index,follow">
+
+    <link rel="shortcut icon" href="imagen/icono.png">
+
+    <title>Ejemplo de Tabla</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        caption {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 6px 10px;
+            text-align: right;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <caption>Informe de gastos de viaje</caption>
+        <tr>
+            <th></th>
+            <th>Comida</th>
+            <th>Hotel</th>
+            <th>Transporte</th>
+            <th>Subtotal</th>
+        </tr>
+
+        <tr>
+            <th id="buenos-aires" axis="buenos-aires">Buenos Aires</th>
+        </tr>
+        <tr>
+            <th headers="buenos-aires">25-Ago-97</th>
+            <td>37.34</td>
+            <td>112.00</td>
+            <td>45.00</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th headers="buenos-aires">26-Ago-97</th>
+            <td>27.28</td>
+            <td>112.00</td>
+            <td>45.00</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th headers="buenos-aires">Subtotales</th>
+            <td>65.00</td>
+            <td>224.00</td>
+            <td>90.00</td>
+            <td>379.02</td>
+        </tr>
+
+        <tr>
+            <th id="cordoba" axis="cordoba">Córdoba</th>
+        </tr>
+        <tr>
+            <th headers="cordoba">27-ago-97</th>
+            <td>96.00</td>
+            <td>109.00</td>
+            <td>36.00</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th headers="cordoba">28-ago-97</th>
+            <td>35.00</td>
+            <td>109.00</td>
+            <td>36.00</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th headers="cordoba">Subtotales</th>
+            <td>196.27</td>
+            <td>442.00</td>
+            <td>162.00</td>
+            <td>800.27</td>
+        </tr>
+    </table>
+
+</body>
+</html>
