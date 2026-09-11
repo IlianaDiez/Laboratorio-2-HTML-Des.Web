@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validaciones HTML5</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2em;
+        }
+
+        /* Cuando el campo es requerido y NO es válido (vacío o mal escrito) */
+        input:required:invalid {
+            border: 2px solid red;
+        }
+
+        /* Cuando el campo es requerido y SÍ es válido */
+        input:required:valid {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Ejemplo de Validación HTML5 con CSS</h2>
+    <p>Escribe un correo válido y observa cómo cambia el color del borde.</p>
+
+    <form>
+        <div style="margin:1em">
+            <label for="email1">Ingrese su correo:</label><br />
+            <input type="email" id="email1" name="email1" value="" placeholder="Enter email" required />
+        </div>
+    </form>
+
+</body>
+</html>
