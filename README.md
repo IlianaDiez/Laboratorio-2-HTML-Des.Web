@@ -1,17 +1,20 @@
-Laboratorio #2 - Desarrollo Web
+# Laboratorio #2 - Desarrollo Web
 
-Instructor: Irina Fong
-Grupo: 1S3122
+**Instructor:** Irina Fong
+**Grupo:** 1S3122
 
-## Tecnología Utilizada
+---
+
+## 🛠️ Tecnología Utilizada
 * HTML5: Utilizado para crear la estructura semántica de las páginas, tablas y formularios.
 * CSS3: Utilizado para aplicar estilos, selectores de clase e ID, y mejorar la presentación visual de cada ejercicio.
-* PHP: Utilizado en el ejercicio de validación de formulario (saneamiento y validación de datos).
 * Git: Utilizado para el control de versiones del proyecto.
 * GitHub: Utilizado para almacenar el repositorio del laboratorio.
-* WampServer: Utilizado como servidor local para ejecutar y probar el archivo PHP de validación.
+* WampServer: Utilizado como servidor local para ejecutar y probar los archivos del laboratorio.
 
-## Información relevante del laboratorio
+---
+
+## 📋 Información relevante del laboratorio
 Durante el Laboratorio #2 - Desarrollo Web se trabajaron los temas de configuración y metadatos del documento, elementos semánticos de HTML5, tablas HTML, hipervínculos y selectores CSS, aplicando buenas prácticas de organización, comentarios explicativos y hojas de estilo externas e internas.
 
 ### 1. Tabla #1 - Informe de Gastos de Viaje (`Tablas1.html`)
@@ -39,24 +42,27 @@ Durante el Laboratorio #2 - Desarrollo Web se trabajaron los temas de configurac
 - Se construyó una página utilizando las etiquetas semánticas `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>` y `<footer>`.
 - Se aplicaron estilos CSS diferenciados por color de fondo a cada bloque, para visualizar claramente la organización estructural del documento.
 
-### 6. Validación de Formulario (`Validacion.php`)
-- Se desarrolló un formulario para ingresar nombre y edad, con validación de datos en PHP.
-- Se validó el nombre utilizando una expresión regular (`preg_match` con `\p{L}\s`) para permitir únicamente letras y espacios, rechazando números y caracteres especiales.
-- Se utilizó `mb_convert_case()` para convertir automáticamente la primera letra de cada palabra del nombre en mayúscula.
-- Para la edad se utilizó `filter_var(..., FILTER_VALIDATE_INT)`, con un rango válido de 0 a 120 años.
-- Se agregó una lista de errores acumulados, `htmlspecialchars()` en la salida como buena práctica de seguridad, y comentarios explicativos.
+### 6. Validación Nativa de Formularios con HTML5 y CSS (`ValidacionesHTML5.html`)
+- Se implementó un campo de formulario (`type="email"`) con el atributo `required` para validación nativa del navegador, sin necesidad de JavaScript ni un lenguaje de servidor.
+- Se utilizaron las pseudo-clases de CSS `:required:valid` y `:required:invalid` para cambiar dinámicamente el color del borde del campo (verde si es válido, rojo si no lo es), según el estado de validación del navegador.
 
-## Cumplimiento de lo solicitado
-- Se realizaron los ejemplos indicados en la guía del laboratorio: tabla #1, tabla #2, párrafos con selectores descendientes, navegación con clases e ID, y estructura semántica de HTML5.
-- Los ejercicios fueron ejecutados y probados mediante un servidor local con WampServer.
+---
+
+## ✅ Cumplimiento de lo solicitado
+- Se realizaron los ejemplos indicados en la guía del laboratorio: tabla #1, tabla #2, párrafos con selectores descendientes, navegación con clases e ID, estructura semántica de HTML5 y validación nativa de formularios con CSS.
+- Los ejercicios fueron ejecutados y probados en el navegador web, algunos directamente desde el disco y otros mediante un servidor local con WampServer.
 - Se organizó el proyecto en un repositorio de GitHub para realizar la entrega correspondiente en Moodle.
-- Se incluyeron comentarios en los archivos HTML, CSS y PHP para explicar las partes principales del código.
-- Como valor agregado, se incorporó un ícono de acceso directo (favicon), validación de datos con expresiones regulares y saneamiento de entradas en el formulario.
+- Se incluyeron comentarios en los archivos HTML y CSS para explicar las partes principales del código.
+- Como valor agregado, se incorporó un ícono de acceso directo (favicon) dentro de una carpeta dedicada de imágenes.
 
-## Conclusión
-El laboratorio permitió reforzar los conocimientos de HTML5 y CSS3 mediante la creación de tablas de datos, el uso de elementos semánticos, la implementación de hipervínculos seguros y la aplicación de selectores CSS (de clase, de ID y descendientes). Además, se practicó la organización de un proyecto web en carpetas separadas para estilos e imágenes, y se aplicaron buenas prácticas de seguridad y validación en el formulario desarrollado con PHP.
+---
 
-## Estructura del repositorio
+## 🎯 Conclusión
+El laboratorio permitió reforzar los conocimientos de HTML5 y CSS3 mediante la creación de tablas de datos, el uso de elementos semánticos, la implementación de hipervínculos seguros, la aplicación de selectores CSS (de clase, de ID y descendientes) y la validación nativa de formularios mediante pseudo-clases de CSS. Además, se practicó la organización de un proyecto web en carpetas separadas para estilos e imágenes, aplicando buenas prácticas de comentarios y metadatos de configuración.
+
+---
+
+## 📁 Estructura del repositorio
 ```
 Lab2/
 ├── Estilos/
@@ -69,6 +75,6 @@ Lab2/
 ├── parrafos.html
 ├── Ejemplo2.html
 ├── Ejemplo5.html
-├── Validacion.php
+├── ValidacionesHTML5.html
 └── README.md
 ```
